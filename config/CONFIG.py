@@ -67,8 +67,8 @@ MAX_QUESTION_REWRITES = 1
 OPENAI_EMBEDDING_MODEL = "text-embedding-3-small"
 PINECONE_EMBEDDING_DIMENSION = 1536 # 1536 là embedding dimension của text-embedding-3-small
 DEEPSEEK_LLM_MODEL = "deepseek-chat"
-CHUNK_SIZE = 2000
-CHUNK_OVERLAP = 500
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 200
 
 
 
