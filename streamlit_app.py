@@ -80,6 +80,9 @@ def render_sidebar():
     """Renders the sidebar for document management and app info."""
     with st.sidebar:
         st.header("📄 Document Management")
+        # --- API Key Input ---
+        st.subheader("🔑 API Key")
+        api_key = st.text_input("Enter API Key to add documents:", type="password", key="api_key_input")
         
         # --- Database selection ---
         database_options = {config.human_description: config.pinecone_index_name 
@@ -100,7 +103,10 @@ def render_sidebar():
             help="Only supports .txt files, each file contains a knowledge topic."
         )
         
-        if st.button("📤 Add Document", disabled=not uploaded_file, use_container_width=True):
+        if st.button("📤 Add Document", key="add_doc_upload", disabled=not uploaded_file, use_container_width=True):
+            if api_key != CONFIG.ENTER_KEY:
+                st.error("❌ Invalid API key! Please enter the correct key to proceed.")
+                return
             if uploaded_file is not None:
                 try:
                     with tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".txt", encoding="utf-8") as tmp_file:
