@@ -1,0 +1,22 @@
+[
+  {
+    "name": "gxnu-general-information",
+    "description": "Search and retrieve general information about Guangxi Normal University including: introduction, campus facilities, academic programs, student life, and other general information",
+    "description_for_human": "General Information about Guangxi Normal University"
+  },
+  {
+    "name": "gxnu-tuition-fees",
+    "description": "Search and retrieve tuition fees and financial information about Guangxi Normal University including: tuition costs, scholarships, financial aid, payment methods, and fee structures",
+    "description_for_human": "Tuition Fees and Financial Information of Guangxi Normal University"
+  },
+  {
+    "name": "gxnu-history",
+    "description": "Search and retrieve historical information about Guangxi Normal University including: founding history, development milestones, achievements, notable alumni, and institutional heritage",
+    "description_for_human": "History and Heritage of Guangxi Normal University"
+  },
+  {
+    "name": "gxnu-admission-2025",
+    "description": "Search and retrieve 2025 admission information for Guangxi Normal University including: application procedures, admission requirements, deadlines, entrance exams, and recruitment details",
+    "description_for_human": "2025 Admission and Recruitment Information of Guangxi Normal University"
+  }
+]
